@@ -1,15 +1,14 @@
-public class SavingsAccount extends Account {
-    private double interestRate;
+public class CheckingAccount extends Account {
+    private double overdraftLimit;
 
-    public SavingsAccount(String accountNumber, double initialBalance, double interestRate) {
+    public CheckingAccount(String accountNumber, double initialBalance, double overdraftLimit) {
         super(accountNumber, initialBalance);
-        this.interestRate = interestRate;
+        this.overdraftLimit = overdraftLimit;
     }
 
-    public double getInterestRate() {
-        return interestRate;
+    public double getOverdraftLimit() {
+        return overdraftLimit;
     }
 
-    // Other SavingsAccount methods...
+    // Other CheckingAccount methods...
 }
-
